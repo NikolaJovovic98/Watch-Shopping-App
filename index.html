@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="main-div">
+
+        <div id="add-section">
+            <div id="form-div">
+                <form action="">
+                    <label for="product-name">Product name:</label>
+                    <input type="text" placeholder="Casio Watch" required id="product-name">
+                    <label for="product-desc">Product description:</label>
+                    <textarea  cols="30" rows="10" required
+                        placeholder="Sample description..." id="product-desc"></textarea>
+                    <label for="product-image">Product image:</label>
+                    <input type="text" required  placeholder="http://...jpg" id="product-image">
+                    <label for="product-price">Product price:</label>
+                    <input type="number" required placeholder="33.50" id="product-price" min="0">
+                    <button type="submit" id="add-button" class="button-class">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="list-section">
+         
+        </div>
+
+        <div id="buy-section">
+
+            <div id="buy-section-panel">
+
+            </div>
+            
+         
+            <hr>
+            <div id="buy-price">
+                
+                <div>
+                    <span>Total: <strong id="total">0</strong><strong> &euro;</strong></span>
+                </div>
+                <div>
+                    <button id="purchase-button" class="button-class">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL START-->
+
+    <div class="modal-bg">
+        <div class="modal">
+          <div class="modal-image-div">
+            <img src="" alt="Modal Image" id="modal-image">
+          </div>
+          <div class="modal-text-content">
+            <h1 id="modal-name"></h1>
+            <p id="modal-price"></p>
+            <p id="modal-desc"></p>
+          </div>  
+           <span id="modal-close" title="Close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </div>
+    </div>
+
+   <!--MODAL END-->
+
+   <!-- MODAL PURCHASE-->
+
+    <div class="modal-bg-purchase">
+        <div class="modal-purchase">
+         <h2>Successful shopping!<br><hr>Total Amount To Pay<h2 id="modal-purchase-amount"></h2></h2>
+        <span id="modal-close-purchase" title="Close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </div>
+    </div>
+
+    <!-- MODAL PURCHASE END-->
+
+
+</body>
+</html>
+

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 22px;
+}
+
+body,h1,h2,h3,h4,input,button,select,option,textarea{
+    outline: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input{
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.842);
+    border-radius: 3px;
+    padding: 5px;
+}
+textarea {
+    resize: none;
+font-size: 18px;   
+border-radius: 3px;
+border: 1px solid rgba(128, 128, 128, 0.842);
+
+  }
+
+
+  .button-class {
+
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: 0.60s;
+  cursor: pointer;
+  font-weight: bold;
+
+  }
+
+  #add-button {
+      background-color: rgb(59, 143, 221);
+      width: 50%;
+  
+  }
+
+  #add-button:hover {
+    background-color: rgb(22, 100, 173);
+  }
+
+  .details-button {
+
+    background-color: gainsboro;
+    width: 90%;
+  }
+
+  .buy-button {
+    width: 90%;
+
+    background-color: rgba(62, 172, 62, 0.89);
+
+  }
+
+  .details-button:hover {
+
+    background-color: rgb(175, 172, 172);
+
+  }
+
+  .buy-button:hover {
+
+    background-color: rgba(29, 155, 29, 0.89);
+
+  }
+
+#main-div {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 80vh;
+    margin-top: 50px;
+}
+
+#main-div div {
+}
+
+
+#form-div {
+    margin: 10px;
+}
+
+#add-section form {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+#list-section{
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+#list-section .list-panel {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 0px 18px -1px rgba(0,0,0,0.74);
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.list-panel h3 {
+    font-style: italic;
+}
+
+.list-panel img {
+    width: 60%;
+}
+
+.list-panel span {
+    display: none;
+}
+
+#buy-section{
+
+margin: 5px;
+display: flex;
+flex-direction: column;
+overflow: scroll;
+
+
+}
+
+.buy-item{
+    box-shadow: 1px 0px 18px -1px rgba(0,0,0,0.44);
+    margin: 5px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.buy-item-info {
+    width: 40%;
+    text-align: center;
+    background-color: ghostwhite;
+    border-radius: 10px;
+}
+
+.buy-item-add-remove-amount {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   
+}
+
+.buy-item-add-remove-amount span {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.buy-item-image {
+
+    width: 90%;
+    text-align: center;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-item-image img {
+    width: 100%;
+}
+
+.minus-amount,.plus-amount {
+    width: 25%;
+    height: 25%;
+    transition: 0.60s;
+}
+
+.minus-amount {
+    background-color: rgb(248, 80, 80);
+}
+
+.plus-amount {
+    background-color: rgba(62, 172, 62, 0.89);
+}
+
+.minus-amount:hover {
+    background-color: rgb(231, 35, 35);
+}
+
+.plus-amount:hover {
+    background-color: rgb(41, 223, 41);
+}
+
+hr {
+    width: 80%;
+}
+
+#buy-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#buy-price div:nth-child(2) {
+    width: 20%;
+}
+
+#purchase-button {
+    width: 100%;
+    background-color: rgba(62, 172, 62, 0.89);
+    transition: 0.60s;
+}
+
+#purchase-button:hover{
+    background-color:rgb(59, 206, 59) ;
+}
